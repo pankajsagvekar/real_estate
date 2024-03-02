@@ -45,10 +45,18 @@ h4{
     font-size: 1.1rem;
 }
 
-table{
+.pcard {
+    height: 25rem;
     width: 100%;
+    object-fit: cover;
 }
 
-th, td{
-    padding: 1rem;
+.background{
+    background-image: url(../img/naomi-hebert-MP0bgaS_d1c-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: 40rem;
+    margin-bottom: 1rem;
+    width: 100%;
 }

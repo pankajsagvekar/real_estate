@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<link rel="shortcut icon" href="../../img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../img/logo.png" type="image/x-icon">
     <title>Real Estate Management</title>
     <link rel="stylesheet" href="../../css/bootstrap5/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../css/styles.css">
@@ -10,16 +10,19 @@
 </head>
 
 <body>
-<div class="container-fluid p-0">
-        <h4 class="text-center p-3 fs-1">Real Estate Management</h4>
-        <nav class="nav nav-underline justify-content-center pe-5 bg-danger">
-            <li class="nav-item"><a class="nav-link p-3 text-white fw-bold" href="../home.html#textdesc">Home</a></li>
-            <li class="nav-item"><a class="nav-link p-3 text-white fw-bold" href="#">Properties</a></li>
-            <li class="nav-item"><a class="nav-link p-3 text-white fw-bold" href="../property/submitproperty.html">Submit Property</a></li>
-            <li class="nav-item"><a class="nav-link p-3 text-white fw-bold" href="../home.html#aboutus">About Us</a></li>
-            <li class="nav-item"><a class="nav-link p-3 text-white fw-bold" href="#">Contact Us</a></li>
-        </nav>
-   </div>
+    <div class="container-fluid p-0">
+        <div class="together bg-danger">
+            <h4 class="text-center p-3 fs-1 mb-0 text-white">Real Estate Management</h4>
+            <nav class="nav nav-underline pe-4 font-size">
+                <li class="nav-item"><a class="nav-link p-3 text-white fw-bold" href="../home.php#textdesc">Home</a></li>
+                <li class="nav-item"><a class="nav-link p-3 text-white fw-bold" href="../properties.php">Properties</a></li>
+                <li class="nav-item"><a class="nav-link p-3 text-white fw-bold" href="submitproperty.html">Submit Property</a></li>
+                <li class="nav-item"><a class="nav-link p-3 text-white fw-bold" href="../home.php#aboutus">About Us</a></li>
+                <li class="nav-item"><a class="nav-link p-3 text-white fw-bold" href="#">Contact Us</a></li>
+                <li class="nav-item"><a class="nav-link p-3 text-white fw-bold " href="#">Logout</a></li>
+            </nav>
+        </div>
+    </div>
     <?php
 
     if (isset($_POST['submit'])) {
@@ -45,18 +48,17 @@
             echo '
             <div class="container text-center mt-5">
                 <h1>Your Property Has Been Submitted</h1>
-                <a class="btn btn-outline-info fw-bold mt-4" href="../properties.html">View Property</a>
+                <a class="btn btn-outline-info fw-bold mt-4" href="../properties.php">View Property</a>
             </div>
             ';
-        }
-        else{
+        } else {
             echo '
             <h1 class="text-center mt-5">Something Went Wrong</h1>
             ';
         }
     }
     ?>
-    
+
 </body>
 
 </html>

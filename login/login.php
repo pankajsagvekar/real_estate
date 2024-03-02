@@ -4,23 +4,29 @@
 <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/bootstrap5/css/bootstrap.min.css">
-    <title>Login Successful</title>
+    <title>Login</title>
 </head>
 <body>
 <?php
 include '../config.php';
-// Retrieve username and password from the login form
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    session_start();
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    // Perform a simple query to validate the user
+    $_SESSION['user'] = $username;
+    $_SESSION['password'] = $password;
+    
     $query = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
     $result = $pdo->query($query);
     sleep(1);
     if ($result->rowCount() == 1) 
     {
-        header("Location: loginsuccess.php");
+        echo '
+        <div class=" container text-center center-div">
+            <h1 class="display-4">Login Successful</h1>
+            <a class=" btn btn-outline-primary " href="../pages/home.php">Next</a>
+        </div>
+    ';
     } 
     else 
     {
@@ -31,7 +37,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         ';
     }
-}
 ?>
 
 </body>
