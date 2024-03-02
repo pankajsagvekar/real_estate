@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Login Page | Real Estate Management</title>
+    <link rel="stylesheet" href="css/bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="css/bootstrap5/js/bootstrap.min.js"></script>
+</head>
+<body class="bg-body-secondary">
+    <div class="card text-center center-div">
+        <h2 class="display-1 p-5 card-title">Login</h2>
+
+        <form class="container" action="login/login.php" method="POST">                
+            <input type="text" id="username" name="username" class="form-control" placeholder="Username" required><br>
+            <input type="password" id="password" name="password" class="form-control" placeholder="Password" required><br>    
+            <input type="submit" value="Login" class="btn btn-outline-primary px-4"><br><br>
+        </form><br>
+        
+        <a href="login/create.php"><span class="badge bg-primary p-3 fs-6">Create Account Now</span></a>
+    </div>
+</body>
+</html>

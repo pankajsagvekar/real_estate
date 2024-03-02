@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: coolvetica;
+    src: url(../fonts/coolvetica/coolvetica\ condensed\ rg.otf);
+}
+
+@font-face {
+    font-family: classy;
+    src: url(../fonts/classy_vogue/Classyvogueregular.ttf);
+}
+
+@font-face {
+    font-family: rosela;
+    src: url(../fonts/rosela_4/Rosela.ttf);
+}
+
+.badge{
+    text-decoration: none;
+}
+
+.center-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4rem;
+}
+
+h4{
+    font-family: rosela;
+}
+
+.together{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.font-size{
+    font-size: 1.1rem;
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    padding: 1rem;
+}
