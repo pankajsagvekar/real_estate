@@ -68,6 +68,18 @@
     ';
     }
     else{
-        echo"Please Login";
+        echo '
+        <head>
+            <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+            <title>Please Login</title>
+            <link rel="stylesheet" href="../../css/bootstrap5/css/bootstrap.min.css">
+            <link rel="stylesheet" href="../../css/styles.css">
+            <script src="../../css/bootstrap5/js/bootstrap.min.js"></script>
+        </head>
+        <div class=" container text-center center-div">
+            <h1 class="display-4">Please Login </h1>
+            <a class=" btn btn-outline-danger " href="../../index.html">Back</a>
+        </div>
+        ';
     }
 ?>
